@@ -12,9 +12,11 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" 
 integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <!--My Stylesheet-->
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="tablet.css">
-  <link rel="stylesheet" href="desktop.css">
+  <!-- <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="tablet.css"> -->
+
+   <link rel="stylesheet" href="styles.css">
+   
   <title>Clothccesories</title>
   <!--Font-Awesome Icon-->
 <script src="https://kit.fontawesome.com/4b0def988b.js" crossorigin="anonymous"></script>
@@ -22,175 +24,177 @@ integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG
 </head>
 <body>
   <div class="body-wrapper"> 
-
-  <header>
-    <div class="top-header">
-      <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-          <a class="navbar-brand phone" href="#"><i class="fas fa-phone p-2 icon"></i>+23481234568999</a>
-        </div>
-        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-          <ul class="navbar-nav d-flex flex-row social">
-            <li> <a href=""> <i class="fa-brands fa-facebook-f icon"></i></a></li>
-  <li><a href="#"><i class="fa-brands fa-instagram icon"></i></a></li>
-  <li><a href="#"><i class="fa-brands fa-twitter icon"></i></a></li>
-  <li><a href="#"><i class="fa-brands fa-whatsapp icon"></i></a></li> </div>
-      </div>
-      </div>
-      </div>
-     <!--Top header ends-->
-     <!--Second Menu-->
-  
-    <div class="logo-cart-header">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-6 site-logo">
-        <a class="navbar-brand " href="#">
-        <img src="./Assets/clothccessories_logo.png" alt="" width="100">
-        </a>
-      </div>
-      <div class="col-lg-6 col-md-6 mt-lg-4 mt-md-4">
-        <div class="logo-cart-form  w-100">
-        <form class="input-group my-auto d-none d-sm-flex justify-content-start">
-          <input
-            autocomplete="off"
-            type="search"
-            class="form-control border border-white rounded-pill "
-            placeholder="Search for Products here"
-            style="min-width: 125px;"
-          />
-          <span class="border-0 d-none d-lg-flex"
-            ><i class="fas fa-search"></i
-          ></span>
-        </form>
-        </div>
-      </div>
-    <div class="col-lg-2 col-md-2 col-sm-6 mt-lg-4 mt-md-4 site-link">
-       <ul class="navbar-nav d-flex flex-row">
-     <li class="nav-item ">
-         <a class="nav-link text-success" href="#"><i class="fas fa-user mx-4  icon "></i></a>
-     </li>
-     <li class="nav-item ">
-      <a class="nav-link text-success" href="#"><i class="fas fa-cart-shopping mx-4 icon"></i> <span></span> </a>
-  </li>
-     </ul>
-    </div>
-      </div>
-    </div>
-    </div>
-    <!--Second Header ends-->
-
-    <!--Third Header Ends-->
-    <div class="mobile-menu">
-      <div class="container-fluid">
-     <div class="row"> 
-          <div class="col-sm-12 border border-success p-2 border-opacity-25">
-            <div class="d-flex flex-row justify-content-between">
-        <a class="navbar-brand " href="">Clothe</a>
-       
-          <button class="navbar-toggler text-success" 
-          type="button" 
-          data-toggle="collapse" 
-          data-target="#navbarCollapse" 
-          aria-controls="navbarCollapse"
-          ria-label="Toggle navigation"
-          
-          >
-            <span><i class="fas fa-bars"></i></span>
-          </button>
-          
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link 1</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link 2</a>
-              </li>
-            </ul>
-            </div> 
+    <header class="background: white;
+    padding-bottom: 10px;">
+      
+      <div class="top-header border-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-7 col-sm-6 text-md-start">
+              <a class="navbar-brand phone " 
+              href="#"><i class="fas fa-phone p-2 icon"></i>+23481234568999</a>
+            </div>
+            <div class="col-lg-6 col-md-5 col-sm-6">
+              <ul class="navbar-nav d-flex flex-row social justify-content-md-end">
+                <li> <a href=""> <i class="fa-brands fa-facebook-f icon p-2"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-instagram icon p-2"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-twitter icon p-2"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-whatsapp icon p-2"></i></a></li> </div> 
+            </div>
           </div>
+        </div>
+
+        <div class="logo-cart-header">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="site-logo">
+                  <a class="navbar-brand " href="#">
+                    <img src="./Assets/clothccessories_logo.png" alt="" style="max-height: 100px;">
+                    </a>
+                </div>
+              </div>
+              <div class="col d-none d-lg-block pt-4">
+                <div class="logo-cart-form  w-100">
+                  <form class="input-group my-auto d-none d-sm-flex justify-content-start">
+                    <input
+                      autocomplete="off"
+                      type="search"
+                      class="form-control border border-white rounded-pill "
+                      placeholder="Search for Products here"
+                      style="min-width: 125px;"
+                    />
+                    <span class="border-0 d-none d-lg-flex"
+                      ><i class="fas fa-search"></i
+                    ></span>
+                  </form>
+                  </div>
+              </div>
+              <div class="col pt-4">
+                <ul class="navbar-nav d-flex flex-row justify-content-end">
+                  
+                  <li class="nav-item ">
+                      <a class="nav-link" href="#"><i class="fas fa-user mx-4  icon "></i></a>
+                  </li>
+                  <li class="nav-item ">
+                   <a class="nav-link" href="#"><i class="fas fa-cart-shopping mx-4 icon"></i> <span></span> </a>
+               </li>
+                  </ul>
+              </div>
+            </div>
           </div>
-          
-           
-            <div class="col-sm-12 border border-success p-2 border-opacity-25 mobile-form">
+        </div>
+        <div class="mobile-menu d-block d-lg-none mb-20">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+            <nav class="navbar border border-success p-2 border-opacity-25">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#">Menu</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </nav>
+            <span class="">
               <form class="input-group">
-              <input
-                autocomplete="off"
-                type="search"
-                class="form-control border border-white rounded-pill "
-                placeholder="Search for Products here"
-                style="min-width: 125px;"
-              />
-              <span class="border-0 d-none d-lg-flex"
-                ><i class="fas fa-search"></i
-              ></span>
-            </form>
+                <input
+                  autocomplete="off"
+                  type="search"
+                  class="form-control border border-success p-2 border-opacity-25"
+                  placeholder="Search for Products here"
+                  style="min-width: 125px;"
+                />
+                <span class="border-0 d-none d-lg-flex"
+                  ><i class="fas fa-search"></i
+                ></span>
+              </form>
+            </span>
           </div>
+        </div>
+          </div>
+        </div>
+<div class="category-header mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="dropdown drop-down-title">
 
-            </div>
+          <button class="btn  dropdown-toggle btn-lg w-100
+          section-bg-1 secondary-bg text-color-white text-start"
+           type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+        categories
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
           </div>
-          
         </div>
-    
-     </header>
-   
-    <div class="myDropdown">
-      <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-3 col-md-12 col-sm-12"><!-- Large button groups (default and split) -->
-          <div class="dropdown">
-            <button class="btn  dropdown-toggle btn-lg w-100"
-             type="button" id="dropdownMenuButton" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              <i class="fas fa-bars pl-4"></i>CATEGORIES
-              <i class="fa-solid fa-caret-down"></i>
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </div>
-          </div>
-        
-        <div class="col-lg-7 col-md-12 col-sm-12 large-menu">
-          <ul class="d-flex flex-row justify-content-center">
-            <li class="p-2"> <a href="">   Home</a> </li>
-            <li class="p-2"><a href=""> Shop</a> </li>
-            <li class="p-2"><a href=""> Product Categories</a> </li>
-            <li class="p-2"><a href=""> Contact</a> </li>
-            <li class="p-2"><a href=""> About</a> </li>
-          </ul>
         </div>
-        
-        <div class="col-lg-2 col-md-12 col-sm-12 large-menu mt-lg-2">
-           <a class="navbar-brand phone " href="#">+23481234568999</a>
-          </div>
+      
+      <div class="col-lg-7 d-none d-lg-block pt-2 long-menu">
+        <ul class="d-flex flex-row ">
+          <li class="p-2"> <a href="">   Home</a> </li>
+          <li class="p-2"><a href=""> Shop</a> </li>
+          <li class="p-2"><a href=""> Product Categories</a> </li>
+          <li class="p-2"><a href=""> Contact</a> </li>
+          <li class="p-2"><a href=""> About</a> </li>
+        </ul>
       </div>
+      <div class="col-lg-2 d-none d-lg-block pt-2 long-phone ">
+        <a href="#"><i class="fas fa-phone p-2 icon"></i>+23481234568999</a></div>
     </div>
   </div>
-    <!--Drop-->
-    
-  </header>
+</div>
+</header>
 
-  <!--This Main-->
-  <main>
-  <section class="pb-20 section-bg-1">
+<main>
+  <section class="section-bg-1 mt-5 border-top pt-4 pb-5">
     <div class="container position-relative">
       <div class="row align-items-center">
-        <div class="col-12 col-lg-6 pt-24">
+        <div class="col-lg-7 col-md-12 col-sm-12 pt-24">
           <div class="mw-xl mw-lg-2xl mx-lg-0 mx-2">
             <a class="btn d-inline-flex mb-6 hero-btn align-items-center btn-success-light rounded-pill" href="#">
               <span class="me-1 fw-semibold" ><i class="fas fa-bag-shopping icon"></i> Shopping made easy!</span>
             </a>
             <h1 class="mb-6" >Get Your Luxury <br> Accessories with ease!</h1>
             <div class="hero-para">
-            <p class="mw-lg fs-7 mb-10" >Clothccessories is now at your fingertip! Order for your luxury accessories
+            <p class="mw-lg  mb-10" >Clothccessories is now at your fingertip! Order for your luxury accessories
               and get it delivered to your door step.</p>
             </div>
             <div class="d-sm-flex align-items-center mb-24 ">
@@ -200,8 +204,8 @@ integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG
           
           </div>
         </div>
-        <div class="col-12 col-lg-6 pt-24 hero-img">
-          <div class="mx-2"><img class="img-fluid" src="./Assets/bg.png" alt=""/></div>
+        <div class="col-lg-5 col-md-12 col-sm-12 pt-24 hero-img">
+          <div class="mx-2 pt-4"><img class="img-fluid" src="./Assets/bg.png" alt=""/></div>
         </div>
       </div>
     </div>
@@ -212,7 +216,7 @@ integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG
       <div class="filter-section">
       <h3>Filter Products</h3>
       <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-6">
+        <div class="col-lg-6 col-md-12 col-sm-12">
           <select class="form-select mb-2" aria-label="Default select example">
             <option selected>SeLect Product</option>
             <option value="1">HandBags</option>
@@ -220,7 +224,7 @@ integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG
             <option value="3">Cluth</option>
           </select>
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="col-lg-3 col-md-6 col-sm-6">
           <select class="form-select" aria-label="Default select example">
             <option selected>Color</option>
             <option value="1">One</option>
@@ -228,12 +232,12 @@ integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG
             <option value="3">Three</option>
           </select>
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-3 filter-btn">
+        <div class="col-lg-3 col-md-6 col-sm-6 mt-2">
           <button class="btn shop-btn ">Filter</button>
         </div>
       </div>
     </div>
-
+  
    
   </div>
   </section>
@@ -241,304 +245,224 @@ integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG
     <div class="container">
      <div class="row mb-4" id="products">
     </div>
-    <div class="product-btn"> 
+    <div class="product-btn text-center"> 
       <button class="btn btn-lg view-more-btn">More Products</button>
     </div>
   </div>
    
   </section>
   <section class="section-bg-2">
-    <div class="container">
-      <div class="filter-section">
-      <h1>Why Clothccessories</h1>
-      <div class="row why-clotheccessories my-4">
-        <div class="col-lg-4 featured-items d-inline-flex">
-          <div class="feature-icon ">
-          <i class="fas fa-truck-fast fs-4 px-4"></i>
+  <div class="container">
+    <div class="filter-section filter-2">
+    <h1>Why Clothccessories</h1>
+    <div class="row why-clotheccessories my-5">
+      <div class="col-lg-4 featured-items d-inline-flex">
+        <div class="feature-icon ">
+        <i class="fas fa-truck-fast fs-4 px-4"></i>
+      </div>
+      <div class="feature-txt">
+        <h6 class="fs-4 mb-2">WorldWide Shipping</h6>
+        <p>We ship to anywhere in the world</p>
+      </div>
+    </div>
+    <div class="col-lg-4 featured-items d-inline-flex 
+    align-content-center">
+      <div class="feature-icon fs-4 px-4">
+        <i class="fas fa-truck-fast"></i>
         </div>
         <div class="feature-txt">
-          <h6 class="fs-4 mb-2">WorldWide Shipping</h6>
-          <p>We ship to anywhere in the world</p>
-        </div>
+        <h6 class="fs-4 mb-2">Secure Checkout</h6>
+        <p>Protected by Paystack and Flutterwave</p>
       </div>
-      <div class="col-lg-4 featured-items d-inline-flex 
-      align-content-center">
+      </div>
+      <div class="col-lg-4 featured-items d-inline-flex">
         <div class="feature-icon fs-4 px-4">
-          <i class="fas fa-truck-fast"></i>
+        <i class="fas fa-truck-fast"></i>
+        </div>
+        <div class="feature-txt">
+        <h6 class="fs-4 mb-2">Coupons & Gift</h6>
+        <p>on products over 50k</p>
+      </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<section class="section-bg-3 mb-5">
+  <div class="container">
+    <!--Tab Category-->
+    <div class="d-flex flex-row border-bottom  mt-5 pt-5 mx-2">
+      <button class="btn p-2 list-btn">HandBags</button>
+      <button class="btn p-2 list-btn">HandBags</button>
+      <button class="btn p-2 list-btn">HandBags</button>
+    </div>
+    <div class="row mt-3 mb-4">
+      <div class="col-lg-4">
+        <div class="card mb-4 product-item" style="height: 350px;"">
+          <img src="./Assets/clothccessories_logo.png"
+           class="card-img-top product-img" style="height: 
+           60%; object-fit: contain;" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title">This</h5>
+            <p class="card-text">Mine</p>
+            <button class="btn shop-btn">
+               <a href="#" class="add-to-cart">Add to Cart
+                 </a></button>
           </div>
-          <div class="feature-txt">
-          <h6 class="fs-4 mb-2">Secure Checkout</h6>
-          <p>Protected by Paystack and Flutterwave</p>
         </div>
-        </div>
-        <div class="col-lg-4 featured-items d-inline-flex">
-          <div class="feature-icon fs-4 px-4">
-          <i class="fas fa-truck-fast"></i>
+      </div>
+      <div class="col-lg-4">
+        <div class="card mb-4 product-item" style="height: 350px;"">
+          <img src="./Assets/clothccessories_logo.png" class="card-img-top product-img" style="height: 60%; object-fit: contain;" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title">This</h5>
+            <p class="card-text">Mine</p>
+            <button class="btn shop-btn"> 
+              <a href="#" class="add-to-cart">Add to Cart </a>
+            </button>
           </div>
-          <div class="feature-txt">
-          <h6 class="fs-4 mb-2">Coupons & Gift</h6>
-          <p>on products over 50k</p>
         </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card mb-4 product-item" style="height: 350px;"">
+          <img src="./Assets/clothccessories_logo.png" class="card-img-top product-img" style="height: 60%; object-fit: contain;" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title">This</h5>
+            <p class="card-text">Mine</p>
+            <button class="btn shop-btn"> <a href="#" class="add-to-cart">Add to Cart </a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card mb-4 product-item" style="height: 350px;"">
+          <img src="./Assets/clothccessories_logo.png" class="card-img-top product-img" style="height: 60%; object-fit: contain;" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title">This</h5>
+            <p class="card-text">Mine</p>
+            <button class="btn shop-btn"> <a href="#" class="add-to-cart">Add to Cart </a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card mb-4 product-item" style="height: 350px;"">
+          <img src="./Assets/clothccessories_logo.png" class="card-img-top product-img" style="height: 60%; object-fit: contain;" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title">This</h5>
+            <p class="card-text">Mine</p>
+            <button class="btn shop-btn"> <a href="#" class="add-to-cart">Add to Cart </a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card mb-4 product-item" style="height: 350px;"">
+          <img src="./Assets/clothccessories_logo.png"class="card-img-top product-img" style="height: 60%; object-fit: contain;" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title">This</h5>
+            <p class="card-text">Mine</p>
+            <button class="btn shop-btn"> <a href="#" class="add-to-cart">Add to Cart </a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card mb-4 product-item" style="height: 350px;"">
+          <img src="./Assets/clothccessories_logo.png" class="card-img-top product-img" style="height: 60%; object-fit: contain;" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title">This</h5>
+            <p class="card-text">Mine</p>
+            <button class="btn shop-btn"> <a href="#" class="add-to-cart">Add to Cart </a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card mb-4 product-item" style="height: 350px;"">
+          <img src="./Assets/clothccessories_logo.png" class="card-img-top product-img" style="height: 60%; object-fit: contain;" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title">This</h5>
+            <p class="card-text">Mine</p>
+            <button class="btn shop-btn"> <a href="#" class="add-to-cart">Add to Cart </a></button>
+          </div>
         </div>
       </div>
     </div>
-    </div>
-  </section>
-  <section class="section-bg-3">
-    <div class="container">
-     <div class="row" id="products">
-    
+   <!-- <div class="row mb-4" id="products"></div> -->
+  <div class="product-btn text-center"> 
+    <button class="btn btn-lg view-more-btn">More Products</button>
+  </div>
+</div>
  
-    </div>
-    <!-- <div class="view-more-btn"> 
-      <button class="btn btn-lg view-more-btn">More Products</button>
-    </div> -->
+</section>
+<section class="cta">
+  <div class="container">
+    <div class=" d-flex flex-row make-call pt-lg-5">
+    <h1 class="pr-2 mt-lg-5 mt-sm-4 fs-2">Want to make products enquiries?</h1>
+    <div class="cta-btn my-4 ">
+    <button class="btn btn-lg mt-4 mx-4">Tap to call us <i class="fas fa-arrow-right"></i></button>
   </div>
-   
-  </section>
-
-  <section class="section-bg-3  bg-black">
-    <div class="container">
-      <!--Tab Category-->
-      <div class="d-flex flex-row border-bottom  mt-5 pt-5 mx-2">
-        <button class="btn p-2 list-btn">HandBags</button>
-        <button class="btn p-2 list-btn">HandBags</button>
-        <button class="btn p-2 list-btn">HandBags</button>
-        <button class="btn p-2 list-btn">HandBags</button>
-        <button class="btn p-2 list-btn">HandBags</button>
-        <button class="btn p-2 list-btn">HandBags</button>
-        <button class="btn p-2 list-btn">HandBags</button>
-        <button class="btn p-2 list-btn">HandBags</button>
-      </div>
-      <div class="row mt-3 mb-5">
-        <div class="col-lg-4 col-md-3 col-sm-6">
-          <div class="card mb-4 product-item" style="height: 350px;"">
-            <img src="./Assets/clothccessories_logo.png"
-             class="card-img-top product-img" style="height: 
-             60%; object-fit: contain;" alt="...">
-            <div class="card-body text-center">
-              <h5 class="card-title">This</h5>
-              <p class="card-text">Mine</p>
-              <button class="btn shop-btn">
-                 <a href="#" class="add-to-cart">Add to Cart
-                   </a></button>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-3 col-sm-6">
-          <div class="card mb-4 product-item" style="height: 350px;"">
-            <img src="./Assets/clothccessories_logo.png" class="card-img-top product-img" style="height: 60%; object-fit: contain;" alt="...">
-            <div class="card-body text-center">
-              <h5 class="card-title">This</h5>
-              <p class="card-text">Mine</p>
-              <button class="btn shop-btn"> 
-                <a href="#" class="add-to-cart">Add to Cart </a>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-3 col-sm-6">
-          <div class="card mb-4 product-item" style="height: 350px;"">
-            <img src="./Assets/clothccessories_logo.png" class="card-img-top product-img" style="height: 60%; object-fit: contain;" alt="...">
-            <div class="card-body text-center">
-              <h5 class="card-title">This</h5>
-              <p class="card-text">Mine</p>
-              <button class="btn shop-btn"> <a href="#" class="add-to-cart">Add to Cart </a></button>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-3 col-sm-6">
-          <div class="card mb-4 product-item" style="height: 350px;"">
-            <img src="./Assets/clothccessories_logo.png" class="card-img-top product-img" style="height: 60%; object-fit: contain;" alt="...">
-            <div class="card-body text-center">
-              <h5 class="card-title">This</h5>
-              <p class="card-text">Mine</p>
-              <button class="btn shop-btn"> <a href="#" class="add-to-cart">Add to Cart </a></button>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-3 col-sm-6">
-          <div class="card mb-4 product-item" style="height: 350px;"">
-            <img src="./Assets/clothccessories_logo.png" class="card-img-top product-img" style="height: 60%; object-fit: contain;" alt="...">
-            <div class="card-body text-center">
-              <h5 class="card-title">This</h5>
-              <p class="card-text">Mine</p>
-              <button class="btn shop-btn"> <a href="#" class="add-to-cart">Add to Cart </a></button>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-3 col-sm-6">
-          <div class="card mb-4 product-item" style="height: 350px;"">
-            <img src="./Assets/clothccessories_logo.png"class="card-img-top product-img" style="height: 60%; object-fit: contain;" alt="...">
-            <div class="card-body text-center">
-              <h5 class="card-title">This</h5>
-              <p class="card-text">Mine</p>
-              <button class="btn shop-btn"> <a href="#" class="add-to-cart">Add to Cart </a></button>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-3 col-sm-6">
-          <div class="card mb-4 product-item" style="height: 350px;"">
-            <img src="./Assets/clothccessories_logo.png" class="card-img-top product-img" style="height: 60%; object-fit: contain;" alt="...">
-            <div class="card-body text-center">
-              <h5 class="card-title">This</h5>
-              <p class="card-text">Mine</p>
-              <button class="btn shop-btn"> <a href="#" class="add-to-cart">Add to Cart </a></button>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-3 col-sm-6">
-          <div class="card mb-4 product-item" style="height: 350px;"">
-            <img src="./Assets/clothccessories_logo.png" class="card-img-top product-img" style="height: 60%; object-fit: contain;" alt="...">
-            <div class="card-body text-center">
-              <h5 class="card-title">This</h5>
-              <p class="card-text">Mine</p>
-              <button class="btn shop-btn"> <a href="#" class="add-to-cart">Add to Cart </a></button>
-            </div>
-          </div>
-        </div>
-      </div>
-     <!-- <div class="row mb-4" id="products"></div> -->
-    <div class="product-btn"> 
-      <button class="btn btn-lg view-more-btn">More Products</button>
-    </div>
   </div>
-   
-  </section>
+  </div>
+</section>
 
-  <section class="cta">
-    <div class="container">
-      <div class=" d-flex flex-row make-call pt-5">
-      <h1 class="pr-2 mt-5">Want to make products enquiries?</h1>
-      <div class="cta-btn my-4 ">
-      <button class="btn btn-lg mt-4 mx-4">Tap to call us <i class="fas fa-arrow-right"></i></button>
-    </div>
-    </div>
-    </div>
-  </section>
-  
 
 </main>
+
+<!--Footer-->
+
 <footer class="text-center text-lg-start mt-5">
   <div class="container-fluid">
-
-  <!-- Section: Social media -->
-  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-    <!-- Left -->
-    <div class="me-5 d-none d-lg-block">
-      <span>Get connected with us on social networks:</span>
-    </div>
-    <!-- Left -->
-
-    <!-- Right -->
-    <div>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-google"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
-    <!-- Right -->
-  </section>
-  <!-- Section: Social media -->
-
-  <!-- Section: Links  -->
-  <section class="">
-    <div class="container text-center text-md-start mt-5">
-      <!-- Grid row -->
-      <div class="row mt-3">
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-          <!-- Content -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            <i class="fas fa-gem me-3"></i>Clothccesories
-          </h6>
-          <p>
-            Here you can use rows and columns to organize your footer content. Lorem ipsum
-            dolor sit amet, consectetur adipisicing elit.
-          </p>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+  <section class="pt-4">
+    <div class="text-start text-md-start mx-auto mt-5">
+      <div class="my-company text-center mb-4">
+        <!-- Content -->
+        <h6 class="text-uppercase fw-bold mb-4">
+          <i class="fas fa-gem me-3"></i>Clothccesories
+        </h6>
+        <p class="text-start">
+          Here you can use rows and columns to organize your footer content. Lorem ipsum
+          dolor sit amet, consectetur adipisicing elit.
+        </p>
+      </div>
+      <div class="row text-start text-md-start mx-auto mt-5">
+        
+        <div class="col-md-3  mb-4 text-start text-md-start">
           <!-- Links -->
           <h6 class="text-uppercase fw-bold mb-4">
             Quick Links
           </h6>
-          <p>
-            <a href="#!" class="text-reset">Angular</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">React</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Vue</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Laravel</a>
-          </p>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Product & Shop
-          </h6>
-          <p>
-            <a href="#!" class="text-reset">Pricing</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Settings</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Orders</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Help</a>
-          </p>
-        </div>
-        <!-- Grid column -->
-         <!-- Grid column -->
-         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Information
-          </h6>
-          <p>
-            <a href="#!" class="text-reset">Pricing</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Settings</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Orders</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Help</a>
-          </p>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-2 col-xl-3 mx-auto mb-md-0 mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">Connect with us</h6>
+          <ul class="my-links text-start">
+          <li><a href="">Angular</a></li>
+          <li><a href="">Angular</a></li>
+          <li><a href="">Angular</a></li>
+          <li><a href="">Angular</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3  mb-4">
+        <!-- Links -->
+        <h6 class="text-uppercase fw-bold mb-4">
+          Quick Links
+        </h6>
+        <ul class="my-links">
+        <li><a href="">Angular</a></li>
+        <li><a href="">Angular</a></li>
+        <li><a href="">Angular</a></li>
+        <li><a href="">Angular</a></li>
+      </ul>
+    </div>
+    <div class="col-md-3  mb-4">
+      <!-- Links -->
+      <h6 class="text-uppercase fw-bold mb-4">
+        Quick Links
+      </h6>
+      <ul class="my-links text-start">
+      <li><a href="">Angular</a></li>
+      <li><a href="">Angular</a></li>
+      <li><a href="">Angular</a></li>
+      <li><a href="">Angular</a></li>
+    </ul>
+  </div>
+  <div class="col-md-3  mb-4">
+    <!-- Links -->
+    <h6 class="text-uppercase fw-bold mb-4">Connect with us</h6>
           <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
           <p>
             <i class="fas fa-envelope me-3"></i>
@@ -547,33 +471,44 @@ integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG
           <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
           <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
         </div>
-        <!-- Grid column -->
+        
       </div>
-      <!-- Grid row -->
+     
     </div>
   </section>
   <!-- Section: Links  -->
-
+  
   <!-- Copyright -->
   <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
     © 2023 Copyright:
     <a class="text-reset fw-bold" href="#">Clothccesories.com</a>
   </div>
   <!-- Copyright -->
-
-<!-- Footer -->
+  
+  <!-- Footer -->
   </div>
-</footer>
- 
-  </div>
-  <!--Main wrapper ends-->
+  </footer>
+  
 
+    </div>
 
+  <script>
+    window.addEventListener('scroll', function() {
+  var navbar = document.querySelector('.category-header');
+  if (window.scrollY > 0) {
+    navbar.classList.add('fixed');
+  } else {
+    navbar.classList.remove('fixed');
+  }
+});
+
+  </script>
 
   <script src="script.js"></script>
  
 
   <!--Boostrap CDN-->
+  
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

@@ -12,7 +12,7 @@ async function fetchData() {
         const title = element.title.slice(0, 10) + "...";
 
         return `
-          <div class="col-lg-4 col-md-3 col-sm-6">
+          <div class="col-lg-4">
             <div class="card mb-4 product-item" style="height: 350px;">
               <img src="${element.image}" class="card-img-top product-img" style="height: 60%; object-fit: contain;" alt="...">
               <div class="card-body text-center">
