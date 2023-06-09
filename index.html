@@ -9,6 +9,8 @@
 
 <!--Boostrap CDN-->
 <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" 
 integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <!--My Stylesheet-->
@@ -39,22 +41,24 @@ integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG
                 <li> <a href=""> <i class="fa-brands fa-facebook-f icon p-2"></i></a></li>
       <li><a href="#"><i class="fa-brands fa-instagram icon p-2"></i></a></li>
       <li><a href="#"><i class="fa-brands fa-twitter icon p-2"></i></a></li>
-      <li><a href="#"><i class="fa-brands fa-whatsapp icon p-2"></i></a></li> </div> 
+      <li><a href="#"><i class="fa-brands fa-whatsapp icon p-2"></i></a></li>
+      </ul> 
+    </div> 
             </div>
           </div>
         </div>
 
-        <div class="logo-cart-header">
+        <div class="logo-cart-header ">
           <div class="container">
-            <div class="row">
+            <div class="row ">
               <div class="col">
                 <div class="site-logo">
                   <a class="navbar-brand " href="#">
-                    <img src="./Assets/clothccessories_logo.png" alt="" style="max-height: 100px;">
+                    <img src="./Assets/clothccessories_logo.png" alt="" style="width: 150px; top: -10px;">
                     </a>
                 </div>
               </div>
-              <div class="col d-none d-lg-block pt-4">
+              <div class="col d-none d-lg-block mt-5">
                 <div class="logo-cart-form  w-100">
                   <form class="input-group my-auto d-none d-sm-flex justify-content-start">
                     <input
@@ -62,7 +66,7 @@ integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG
                       type="search"
                       class="form-control border border-white rounded-pill "
                       placeholder="Search for Products here"
-                      style="min-width: 125px;"
+                      style=""
                     />
                     <span class="border-0 d-none d-lg-flex"
                       ><i class="fas fa-search"></i
@@ -70,14 +74,16 @@ integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG
                   </form>
                   </div>
               </div>
-              <div class="col pt-4">
+              <div class="col mt-5">
                 <ul class="navbar-nav d-flex flex-row justify-content-end">
                   
                   <li class="nav-item ">
                       <a class="nav-link" href="#"><i class="fas fa-user mx-4  icon "></i></a>
                   </li>
-                  <li class="nav-item ">
-                   <a class="nav-link" href="#"><i class="fas fa-cart-shopping mx-4 icon"></i> <span></span> </a>
+                  <li class="shopping">
+                   <a class="nav-link" href="#">
+                    <i class="fas fa-cart-shopping mx-4 icon"></i> 
+                    <span class="quantity"  id="cartIcon">0</span> </a>
                </li>
                   </ul>
               </div>
@@ -91,43 +97,30 @@ integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG
             <nav class="navbar border border-success p-2 border-opacity-25">
               <div class="container-fluid">
                 <a class="navbar-brand" href="#">Menu</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                  <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                  </div>
-                  <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li>
-                            <hr class="dropdown-divider">
-                          </li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                    <form class="d-flex mt-3" role="search">
-                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                  </div>
-                </div>
+                <button class="navbar-toggler" type="button"
+                 data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" 
+                aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon" onclick="openNav()"></span>
+               </button>
+                  
+               <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                </ul>
               </div>
+            </div>
+                  
             </nav>
             <span class="">
               <form class="input-group">
@@ -138,8 +131,7 @@ integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG
                   placeholder="Search for Products here"
                   style="min-width: 125px;"
                 />
-                <span class="border-0 d-none d-lg-flex"
-                  ><i class="fas fa-search"></i
+                <span class="border-0 d-none d-lg-flex"><i class="fas fa-search search-bar"></i
                 ></span>
               </form>
             </span>
@@ -182,22 +174,70 @@ integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG
   </div>
 </div>
 </header>
+<div id="sidebar-mobile-menu" class="sidebar sidebar-mobile-menu sidebar-open">
+  <div class="sidebar-menu-inner sidebar_scrollbar">
+      <div class="sidebar-menu-head">
+          <div class="site-logo">
+              <a href="index.html"><img src="./Assets/clothccessories_logo.png" 
+                style="max-height: 150px;" alt="Logo"></a>
+          </div>
+          <button href="javascript:void(0)" class="sidebar-close" onclick="clodeNav()">×</button>
+      </div>
+      <div class="sidebar-menu">
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><span class="menu-expand"></span><a href="#">Product Categories</a>
+              </li>
+              <li><a href="https://bagwarehouse.ng/track-order">Track Order</a></li>
+              <li><a href="https://bagwarehouse.ng/payment">Payment</a></li>
+          </ul>
+      </div>
+      <div class="social-media-2 mt-4">
+        <ul class="navbar-nav d-flex flex-row social justify-content-md-end">
+          <li> <a href=""> <i class="fa-brands fa-facebook-f icon p-2"></i></a></li>
+<li><a href="#"><i class="fa-brands fa-instagram icon p-2"></i></a></li>
+<li><a href="#"><i class="fa-brands fa-twitter icon p-2"></i></a></li>
+<li><a href="#"><i class="fa-brands fa-whatsapp icon p-2"></i></a></li>
+</ul> 
+      </div>
+  </div>
+</div>
+<div class="sidebar-overlay" style="display: block;"></div>
+<div id="myOverlay" class="overlay">
+  <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+  <div class="overlay-content">
+  <span class="twitter-typeahead" style="position: relative; display: inline-block;">
+    <input type="text" class="search_product tt-hint" autofocus="" 
+    readonly="" autocomplete="off" spellcheck="false" tabindex="-1" dir="ltr" 
+    style="position: absolute; top: 0px; left: 0px; 
+    border-color: transparent; box-shadow: none; opacity: 1; 
+    background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);"><input type="text" placeholder="Search product.." class="search_product tt-input" name="search" required="" autofocus="" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: &quot;Nunito Sans&quot;, sans-serif; font-size: 17px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-usersList"></div></div></span>
+      
+  </div>
+</div>
 
 <main>
-  <section class="section-bg-1 mt-5 border-top pt-4 pb-5">
+  <section class="checkout" id="checkout" style="display: none;">
+    <h2>Checkout</h2>
+    <ul id="cartItems"></ul>
+  </section>
+  <section class="section-bg-1 mt-2 border-top pt-4 pb-5">
     <div class="container position-relative">
       <div class="row align-items-center">
         <div class="col-lg-7 col-md-12 col-sm-12 pt-24">
-          <div class="mw-xl mw-lg-2xl mx-lg-0 mx-2">
-            <a class="btn d-inline-flex mb-6 hero-btn align-items-center btn-success-light rounded-pill" href="#">
-              <span class="me-1 fw-semibold" ><i class="fas fa-bag-shopping icon"></i> Shopping made easy!</span>
-            </a>
-            <h1 class="mb-6" >Get Your Luxury <br> Accessories with ease!</h1>
-            <div class="hero-para">
+          <div class="mw-xl mw-lg-2xl mx-lg-0 mx-2 section-animation">
+            <h6 class="d-inline-flex mb-6 hero-shop animated">
+              <span class="me-1 fw-semibold" >
+                <i class="fas fa-bag-shopping icon"></i></span>
+                 Shopping made easy!
+              </h6>
+            <h1 class="mb-6 animated" >Get Your Luxury <br> Accessories with ease!</h1>
+            <div class="hero-para animated">
             <p class="mw-lg  mb-10" >Clothccessories is now at your fingertip! Order for your luxury accessories
               and get it delivered to your door step.</p>
             </div>
-            <div class="d-sm-flex align-items-center mb-24 ">
+            <div class="d-sm-flex align-items-center mb-24 animated ">
               <a class="btn mt-4 p-3 shop-btn" href="#" >
                Shop Now</a>
               </div>
@@ -243,7 +283,136 @@ integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG
   </section>
   <section class="section-bg-3 mb-5">
     <div class="container">
-     <div class="row mb-4" id="products">
+     <!-- <div class="row mb-4" id="products">
+    </div> -->
+    <div class="row mt-3 mb-4 product" id="product">
+      <div class="col-lg-4">
+        <div class="card mb-4 product-item" style="height: 350px;">
+          <img src="./Assets/bigbag.jpg"
+           class="card-img-top product-img" style="height: 
+           60%; object-fit: cover;" alt="...">
+          <div class="card-body text-center">
+            <h5 class="producTitle">Big Bag</h5>
+            <p class="productPrice">#8,000</p>
+            <div class="colors">
+              <div class="color"></div>
+              <div class="color"></div>
+              <div class="color"></div>
+          </div>
+            <button class="btn shop-btn">
+               <a href="#" class="add-to-cart">Add to Cart
+                 </a></button>
+                 
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card mb-4 product-item" style="height: 350px;"">
+          <img src="./Assets/channel.jpg" class="card-img-top product-img" style="height: 60%; object-fit: cover;" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title">Midi Channel</h5>
+            <p class="card-text">#10,000</p>
+            <div class="colors">
+              <div class="color"></div>
+              <div class="color"></div>
+              <div class="color"></div>
+          </div>
+            <button class="btn shop-btn"> 
+              <a href="#" class="add-to-cart">Add to Cart </a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card mb-4 product-item" style="height: 350px;"">
+          <img src="./Assets/bagwithstrap.jpg" class="card-img-top product-img" style="height: 60%; object-fit: cover;" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title">Strap Bag</h5>
+            <p class="card-text">#7,000</p>
+            <div class="colors">
+              <div class="color"></div>
+              <div class="color"></div>
+              <div class="color"></div>
+          </div>
+            <button class="btn shop-btn"> <a href="#" class="add-to-cart">Add to Cart </a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card mb-4 product-item" style="height: 350px;"">
+          <img src="./Assets/hermescroc.jpg" class="card-img-top product-img" style="height: 60%; object-fit: cover;" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title">Croc Hermes</h5>
+            <p class="card-text">#6,500</p>
+            <div class="colors">
+              <div class="color"></div>
+              <div class="color"></div>
+              <div class="color"></div>
+          </div>
+            <button class="btn shop-btn"> <a href="#" class="add-to-cart">Add to Cart </a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card mb-4 product-item" style="height: 350px;"">
+          <img src="./Assets/travelhermes.jpg" class="card-img-top product-img" style="height: 60%; object-fit: cover;" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title">Big Hermes</h5>
+            <p class="card-text">#12,000</p>
+            <div class="colors">
+              <div class="color"></div>
+              <div class="color"></div>
+          </div>
+            <button class="btn shop-btn"> <a href="#" class="add-to-cart">Add to Cart </a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card mb-4 product-item" style="height: 350px;"">
+          <img src="./Assets/fendi.jpg"class="card-img-top product-img" style="height: 60%; object-fit: cover;" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title">Party Fendi</h5>
+            <p class="card-text">#10,000</p>
+            <div class="colors">
+              <div class="color"></div>
+              <div class="color"></div>
+              <div class="color"></div>
+          </div>
+            <button class="btn shop-btn"> <a href="#" class="add-to-cart">Add to Cart </a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card mb-4 product-item" style="height: 350px;">
+          <img src="./Assets/multicolor.jpg" class="card-img-top product-img" style="height: 60%; object-fit: cover;" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title">Multicolor Bag</h5>
+            <p class="card-text">#7,000</p>
+            <div class="colors">
+              <div class="color"></div>
+              <div class="color"></div>
+              <div class="color"></div>
+          </div>
+            <button class="btn shop-btn"> <a href="#" class="add-to-cart">Add to Cart </a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card mb-4 product-item" style="height: 350px;">
+          <img src="./Assets/predo.jpg" class="card-img-top product-img" 
+          style="height: 60%; object-fit: cover;" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title">Predo</h5>
+            <p class="card-text">#8,000</p>
+            <div class="colors">
+              <div class="color"></div>
+              <div class="color"></div>
+              <div class="color"></div>
+          </div>
+            <button class="btn shop-btn"> <a href="#" class="add-to-cart">Add to Cart </a></button>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="product-btn text-center"> 
       <button class="btn btn-lg view-more-btn">More Products</button>
@@ -297,27 +466,38 @@ integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG
       <button class="btn p-2 list-btn">HandBags</button>
       <button class="btn p-2 list-btn">HandBags</button>
     </div>
-    <div class="row mt-3 mb-4">
+    <div class="row mt-3 mb-4 product" id="product">
       <div class="col-lg-4">
-        <div class="card mb-4 product-item" style="height: 350px;"">
-          <img src="./Assets/clothccessories_logo.png"
+        <div class="card mb-4 product-item" style="height: 350px;">
+          <img src="./Assets/bigbag.jpg"
            class="card-img-top product-img" style="height: 
-           60%; object-fit: contain;" alt="...">
+           60%; object-fit: cover;" alt="...">
           <div class="card-body text-center">
-            <h5 class="card-title">This</h5>
-            <p class="card-text">Mine</p>
+            <h5 class="producTitle">Big Bag</h5>
+            <p class="productPrice">#8,000</p>
+            <div class="colors">
+              <div class="color"></div>
+              <div class="color"></div>
+              <div class="color"></div>
+          </div>
             <button class="btn shop-btn">
                <a href="#" class="add-to-cart">Add to Cart
                  </a></button>
+                 
           </div>
         </div>
       </div>
       <div class="col-lg-4">
         <div class="card mb-4 product-item" style="height: 350px;"">
-          <img src="./Assets/clothccessories_logo.png" class="card-img-top product-img" style="height: 60%; object-fit: contain;" alt="...">
+          <img src="./Assets/channel.jpg" class="card-img-top product-img" style="height: 60%; object-fit: cover;" alt="...">
           <div class="card-body text-center">
-            <h5 class="card-title">This</h5>
-            <p class="card-text">Mine</p>
+            <h5 class="card-title">Midi Channel</h5>
+            <p class="card-text">#10,000</p>
+            <div class="colors">
+              <div class="color"></div>
+              <div class="color"></div>
+              <div class="color"></div>
+          </div>
             <button class="btn shop-btn"> 
               <a href="#" class="add-to-cart">Add to Cart </a>
             </button>
@@ -326,60 +506,90 @@ integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG
       </div>
       <div class="col-lg-4">
         <div class="card mb-4 product-item" style="height: 350px;"">
-          <img src="./Assets/clothccessories_logo.png" class="card-img-top product-img" style="height: 60%; object-fit: contain;" alt="...">
+          <img src="./Assets/bagwithstrap.jpg" class="card-img-top product-img" style="height: 60%; object-fit: cover;" alt="...">
           <div class="card-body text-center">
-            <h5 class="card-title">This</h5>
-            <p class="card-text">Mine</p>
+            <h5 class="card-title">Strap Bag</h5>
+            <p class="card-text">#7,000</p>
+            <div class="colors">
+              <div class="color"></div>
+              <div class="color"></div>
+              <div class="color"></div>
+          </div>
             <button class="btn shop-btn"> <a href="#" class="add-to-cart">Add to Cart </a></button>
           </div>
         </div>
       </div>
       <div class="col-lg-4">
         <div class="card mb-4 product-item" style="height: 350px;"">
-          <img src="./Assets/clothccessories_logo.png" class="card-img-top product-img" style="height: 60%; object-fit: contain;" alt="...">
+          <img src="./Assets/hermescroc.jpg" class="card-img-top product-img" style="height: 60%; object-fit: cover;" alt="...">
           <div class="card-body text-center">
-            <h5 class="card-title">This</h5>
-            <p class="card-text">Mine</p>
+            <h5 class="card-title">Croc Hermes</h5>
+            <p class="card-text">#6,500</p>
+            <div class="colors">
+              <div class="color"></div>
+              <div class="color"></div>
+              <div class="color"></div>
+          </div>
             <button class="btn shop-btn"> <a href="#" class="add-to-cart">Add to Cart </a></button>
           </div>
         </div>
       </div>
       <div class="col-lg-4">
         <div class="card mb-4 product-item" style="height: 350px;"">
-          <img src="./Assets/clothccessories_logo.png" class="card-img-top product-img" style="height: 60%; object-fit: contain;" alt="...">
+          <img src="./Assets/travelhermes.jpg" class="card-img-top product-img" style="height: 60%; object-fit: cover;" alt="...">
           <div class="card-body text-center">
-            <h5 class="card-title">This</h5>
-            <p class="card-text">Mine</p>
+            <h5 class="card-title">Big Hermes</h5>
+            <p class="card-text">#12,000</p>
+            <div class="colors">
+              <div class="color"></div>
+              <div class="color"></div>
+          </div>
             <button class="btn shop-btn"> <a href="#" class="add-to-cart">Add to Cart </a></button>
           </div>
         </div>
       </div>
       <div class="col-lg-4">
         <div class="card mb-4 product-item" style="height: 350px;"">
-          <img src="./Assets/clothccessories_logo.png"class="card-img-top product-img" style="height: 60%; object-fit: contain;" alt="...">
+          <img src="./Assets/fendi.jpg"class="card-img-top product-img" style="height: 60%; object-fit: cover;" alt="...">
           <div class="card-body text-center">
-            <h5 class="card-title">This</h5>
-            <p class="card-text">Mine</p>
+            <h5 class="card-title">Party Fendi</h5>
+            <p class="card-text">#10,000</p>
+            <div class="colors">
+              <div class="color"></div>
+              <div class="color"></div>
+              <div class="color"></div>
+          </div>
             <button class="btn shop-btn"> <a href="#" class="add-to-cart">Add to Cart </a></button>
           </div>
         </div>
       </div>
       <div class="col-lg-4">
-        <div class="card mb-4 product-item" style="height: 350px;"">
-          <img src="./Assets/clothccessories_logo.png" class="card-img-top product-img" style="height: 60%; object-fit: contain;" alt="...">
+        <div class="card mb-4 product-item" style="height: 350px;">
+          <img src="./Assets/multicolor.jpg" class="card-img-top product-img" style="height: 60%; object-fit: cover;" alt="...">
           <div class="card-body text-center">
-            <h5 class="card-title">This</h5>
-            <p class="card-text">Mine</p>
+            <h5 class="card-title">Multicolor Bag</h5>
+            <p class="card-text">#7,000</p>
+            <div class="colors">
+              <div class="color"></div>
+              <div class="color"></div>
+              <div class="color"></div>
+          </div>
             <button class="btn shop-btn"> <a href="#" class="add-to-cart">Add to Cart </a></button>
           </div>
         </div>
       </div>
       <div class="col-lg-4">
-        <div class="card mb-4 product-item" style="height: 350px;"">
-          <img src="./Assets/clothccessories_logo.png" class="card-img-top product-img" style="height: 60%; object-fit: contain;" alt="...">
+        <div class="card mb-4 product-item" style="height: 350px;">
+          <img src="./Assets/predo.jpg" class="card-img-top product-img" 
+          style="height: 60%; object-fit: cover;" alt="...">
           <div class="card-body text-center">
-            <h5 class="card-title">This</h5>
-            <p class="card-text">Mine</p>
+            <h5 class="card-title">Predo</h5>
+            <p class="card-text">#8,000</p>
+            <div class="colors">
+              <div class="color"></div>
+              <div class="color"></div>
+              <div class="color"></div>
+          </div>
             <button class="btn shop-btn"> <a href="#" class="add-to-cart">Add to Cart </a></button>
           </div>
         </div>
@@ -396,7 +606,7 @@ integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG
   <div class="container">
     <div class=" d-flex flex-row make-call pt-lg-5">
     <h1 class="pr-2 mt-lg-5 mt-sm-4 fs-2">Want to make products enquiries?</h1>
-    <div class="cta-btn my-4 ">
+    <div class="cta-btn my-4 pl-5">
     <button class="btn btn-lg mt-4 mx-4">Tap to call us <i class="fas fa-arrow-right"></i></button>
   </div>
   </div>
@@ -408,44 +618,45 @@ integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG
 
 <!--Footer-->
 
-<footer class="text-center text-lg-start mt-5">
+<footer class="mt-5">
   <div class="container-fluid">
   <section class="pt-4">
-    <div class="text-start text-md-start mx-auto mt-5">
+    <div class="mx-auto mt-5">
       <div class="my-company text-center mb-4">
         <!-- Content -->
         <h6 class="text-uppercase fw-bold mb-4">
           <i class="fas fa-gem me-3"></i>Clothccesories
         </h6>
-        <p class="text-start">
+        <p class="text-center">
           Here you can use rows and columns to organize your footer content. Lorem ipsum
           dolor sit amet, consectetur adipisicing elit.
         </p>
+
       </div>
-      <div class="row text-start text-md-start mx-auto mt-5">
+      <div class="row mx-auto mt-5 quick-links">
         
-        <div class="col-md-3  mb-4 text-start text-md-start">
+        <div class="col-md-3  mb-4 ">
           <!-- Links -->
           <h6 class="text-uppercase fw-bold mb-4">
             Quick Links
           </h6>
-          <ul class="my-links text-start">
-          <li><a href="">Angular</a></li>
-          <li><a href="">Angular</a></li>
-          <li><a href="">Angular</a></li>
-          <li><a href="">Angular</a></li>
+          <ul class="my-links ">
+          <li><a href="">Home</a></li>
+          <li><a href="">Payment</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Contact Us</a></li>
         </ul>
       </div>
       <div class="col-md-3  mb-4">
         <!-- Links -->
         <h6 class="text-uppercase fw-bold mb-4">
-          Quick Links
+          Product & Shop
         </h6>
         <ul class="my-links">
-        <li><a href="">Angular</a></li>
-        <li><a href="">Angular</a></li>
-        <li><a href="">Angular</a></li>
-        <li><a href="">Angular</a></li>
+        <li><a href="">Shop</a></li>
+        <li><a href="">Cart</a></li>
+        <li><a href="">My Account</a></li>
+        <li><a href="">Track Order</a></li>
       </ul>
     </div>
     <div class="col-md-3  mb-4">
@@ -454,22 +665,23 @@ integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG
         Quick Links
       </h6>
       <ul class="my-links text-start">
-      <li><a href="">Angular</a></li>
-      <li><a href="">Angular</a></li>
-      <li><a href="">Angular</a></li>
-      <li><a href="">Angular</a></li>
+      <li><a href="">Return Policy</a></li>
+      <li><a href="">Privacy Policy</a></li>
+      <li><a href="">Terms & Conditions</a></li>
+      <li><a href="">Disclaimer</a></li>
     </ul>
   </div>
   <div class="col-md-3  mb-4">
     <!-- Links -->
     <h6 class="text-uppercase fw-bold mb-4">Connect with us</h6>
-          <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
-          <p>
-            <i class="fas fa-envelope me-3"></i>
-            info@example.com
-          </p>
-          <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+    <ul class="d-flex flex-row">
+      <li> <a href=""> <i class="fa-brands fa-facebook-f icon p-2"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-instagram icon p-2"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-twitter icon p-2"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-whatsapp icon p-2"></i></a></li> 
+    </ul>
+    <h6 class="text-uppercase fw-bold mb-4">Secured Payment With </h6>
+         <img src="./Assets/paystack-badge-cards.jpg" alt="" style="width: 200px;">
         </div>
         
       </div>
@@ -491,16 +703,84 @@ integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG
   
 
     </div>
-
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
   <script>
-    window.addEventListener('scroll', function() {
-  var navbar = document.querySelector('.category-header');
-  if (window.scrollY > 0) {
-    navbar.classList.add('fixed');
-  } else {
-    navbar.classList.remove('fixed');
-  }
-});
+   
+
+//  Get the cart icon element
+var cartIcon = document.getElementById('cartIcon');
+// Get the cart items container
+var cartItemsContainer = document.getElementById('cartItems');
+// Get the checkout section
+var checkoutSection = document.getElementById('checkout');
+
+
+// // Initialize the cart count and cart items array
+var cartCount = 0;
+var cartItems =[];
+
+
+cartIcon.addEventListener('click', showCheckout);
+
+// // Attach a click event listener to each "Add to Cart" button
+ var addToCartButtons = document.getElementsByClassName('add-to-cart')
+ for (var i = 0; i < addToCartButtons.length; i++) {
+  addToCartButtons[i].addEventListener('click', addToCart);
+}
+
+
+// // Function to add the product to the cart and update the cart icon
+ function addToCart() {
+  const productContainer = this.parentElement;
+  const productTitle = productContainer.querySelector('.productTitle');
+  const productPrice = productContainer.querySelector('productPrice')
+
+  
+  // Create a new cart item object
+  const cartItem = {
+    title: productTitle,
+    price: productPrice
+  };
+ // Add the cart item to the cart items array
+ cartItems.push(cartItem);
+
+  // Increase the cart count
+  cartCount++;
+
+//   // Update the cart icon with the new count
+  cartIcon.innerText = cartCount;
+ }
+
+
+// Function to show the checkout page with the selected products
+function showCheckout() {
+  // Clear the previous cart items
+  cartItemsContainer.innerHTML = '';
+
+  // Iterate over the cart items and create the list elements
+  cartItems.forEach(function(item) {
+    const li = document.createElement('li');
+    li.innerText = item.title;
+    li.innerText = item.price;
+    cartItemsContainer.appendChild(li);
+  });
+
+  // Show the checkout section
+  
+  checkout.style.display = 'block';
+
+  // Return false to prevent default behavior and page refresh
+  return false;
+}
+
 
   </script>
 
@@ -512,5 +792,8 @@ integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- Bootstrap JavaScript (Optional) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
 </body>
 </html>
