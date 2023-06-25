@@ -2,14 +2,18 @@
 let generateShop = () => {
   // Get the product container element
   const productContainer = document.getElementById('productContainer');
+  
+ // Filter products with defined colors
+ const productsWithColors = ProductsData.filter((product) => product.colors !== undefined);
 
   // Generate the shop HTML content
-  productContainer.innerHTML = ProductsData
+  productContainer.innerHTML = productsWithColors
     .map((x) => {
       let { id, name, price, img, colors, btn } = x;
       if (colors === undefined) {
         colors = [];
       }
+      
       return `
         <div class="col-lg-4">
           <div class="card mb-4 product-item" id="product-id-${id}" style="height: 450px;">

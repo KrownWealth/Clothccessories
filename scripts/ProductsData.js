@@ -1,8 +1,4 @@
 
-
-
-
-
 let ProductsData = [
   {
     id: "0",
