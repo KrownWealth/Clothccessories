@@ -1,442 +1,370 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--Font Family-->
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&family=Nunito+Sans:wght@200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&family=Nunito+Sans:wght@200;300;400;500;600;700;800;900;1000&display=swap"
+    rel="stylesheet">
 
-<!--Boostrap CDN-->
-<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" 
-integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <!--Boostrap CDN-->
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <!--My Stylesheet-->
   <!-- <link rel="stylesheet" href="style.css">
    <link rel="stylesheet" href="tablet.css"> -->
 
-   <link rel="stylesheet" href="styles.css">
-   
+  <link rel="stylesheet" href="styles.css">
+
   <title>Clothccesories</title>
   <!--Font-Awesome Icon-->
-<script src="https://kit.fontawesome.com/4b0def988b.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/4b0def988b.js" crossorigin="anonymous"></script>
 
 </head>
+
 <body>
-  <div class="body-wrapper"> 
+  <div class="body-wrapper">
     <header class="background: white;
     padding-bottom: 10px;">
-      
+
       <div class="top-header border-bottom">
         <div class="container">
           <div class="row">
             <div class="col-lg-6 col-md-7 col-sm-6 text-md-start">
-              <a class="navbar-brand phone " 
-              href="#"><i class="fas fa-phone p-2 icon"></i>+23481234568999</a>
+              <a class="navbar-brand phone " href="#"><i class="fas fa-phone p-2 icon"></i>+23481234568999</a>
             </div>
             <div class="col-lg-6 col-md-5 col-sm-6">
               <ul class="navbar-nav d-flex flex-row social justify-content-md-end">
                 <li> <a href=""> <i class="fa-brands fa-facebook-f icon p-2"></i></a></li>
-      <li><a href="#"><i class="fa-brands fa-instagram icon p-2"></i></a></li>
-      <li><a href="#"><i class="fa-brands fa-twitter icon p-2"></i></a></li>
-      <li><a href="#"><i class="fa-brands fa-whatsapp icon p-2"></i></a></li>
-      </ul> 
-    </div> 
+                <li><a href="#"><i class="fa-brands fa-instagram icon p-2"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter icon p-2"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-whatsapp icon p-2"></i></a></li>
+              </ul>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="logo-cart-header ">
-          <div class="container">
-            <div class="row ">
-              <div class="col">
-                <div class="site-logo">
-                  <a class="navbar-brand " href="#">
-                    <img src="./Assets/clothccessories_logo.png" alt="" style="width: 150px; top: -10px;">
-                    </a>
-                </div>
+      <div class="logo-cart-header ">
+        <div class="container">
+          <div class="row ">
+            <div class="col">
+              <div class="site-logo">
+                <a class="navbar-brand " href="#">
+                  <img src="./Assets/clothccessories_logo.png" alt="" style="width: 150px; top: -10px;">
+                </a>
               </div>
-              <div class="col d-none d-lg-block mt-5">
-                <div class="logo-cart-form  w-100">
-                  <form class="input-group my-auto d-none d-sm-flex justify-content-start">
-                    <input
-                      autocomplete="off"
-                      type="search"
-                      class="form-control border border-white rounded-pill "
-                      placeholder="Search for Products here"
-                      style=""
-                    />
-                    <span class="border-0 d-none d-lg-flex"
-                      ><i class="fas fa-search"></i
-                    ></span>
-                  </form>
-                  </div>
+            </div>
+            <div class="col d-none d-lg-block mt-5">
+              <div class="logo-cart-form  w-100">
+                <form class="input-group my-auto d-none d-sm-flex justify-content-start">
+                  <input autocomplete="off" type="search" class="form-control border border-white rounded-pill "
+                    placeholder="Search for Products here" style="" />
+                  <span class="border-0 d-none d-lg-flex"><i class="fas fa-search"></i></span>
+                </form>
               </div>
-              <div class="col mt-5">
-                <ul class="navbar-nav d-flex flex-row justify-content-end">
-                  
-                  <li class="nav-item ">
-                      <a class="nav-link" href="#"><i class="fas fa-user mx-4  icon "></i></a>
-                  </li>
-                  <li class="shopping">
-                   <a class="nav-link" href="#" id="cart-link">
-                    <i class="fas fa-cart-shopping mx-4 icon"></i> 
-                    <span class="quantity"  id="cartIcon">0</span> </a>
-                    
-               </li>
-              
-                  </ul>
-              </div>
+            </div>
+            <div class="col mt-5">
+              <ul class="navbar-nav d-flex flex-row justify-content-end">
+
+                <li class="nav-item ">
+                  <a class="nav-link" href="#"><i class="fas fa-user mx-4  icon "></i></a>
+                </li>
+                <li class="shopping">
+                  <a class="nav-link" href="#" id="cart-link">
+                    <i class="fas fa-cart-shopping mx-4 icon"></i>
+                    <span class="quantity" id="cartIcon">0</span> </a>
+
+                </li>
+
+              </ul>
             </div>
           </div>
         </div>
-        <div class="mobile-menu d-block d-lg-none mb-20">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="d-flex flex-row border border-success 
+      </div>
+      <div class="mobile-menu d-block d-lg-none mb-20">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="d-flex flex-row border border-success 
                 p-2 border-opacity-25 justify-content-between">
-                  <div class="menu-text">Menu 
-                  </div>
-                    <div> <button class="" id="toggle-btn">&#9776</button>
+                <div class="menu-text">Menu
+                </div>
+                <div> <button class="" id="toggle-btn">&#9776</button>
                 </div>
               </div>
-            <span class="">
-              <form class="input-group">
-                <input
-                  autocomplete="off"
-                  type="search"
-                  class="form-control border border-success p-2 border-opacity-25"
-                  placeholder="Search for Products here"
-                  style="min-width: 125px;"
-                />
-                <span class="border-0 d-none d-lg-flex"><i class="fas fa-search search-bar"></i
-                ></span>
-              </form>
-            </span>
-          </div>
-        </div>
-          </div>
-        </div>
-<div class="category-header mt-5">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-3">
-        <div class="dropdown drop-down-title">
-
-          <button class="btn  dropdown-toggle btn-lg w-100
-          section-bg-1 secondary-bg text-color-white text-start"
-           type="button" id="dropdownMenuButton" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-        categories
-          </button>
-          <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item border-bottom" href="#">HandBags</a>
-            <a class="dropdown-item border-bottom" href="#">Shoes</a>
-            <a class="dropdown-item border-bottom" href="#">Party Purse</a>
-            <a class="dropdown-item border-bottom" href="#">Jewelry</a>
-            <a class="dropdown-item border-bottom" href="#"> Luxury Accessories</a>
-            
-          </div>
-        </div>
-        </div>
-      
-      <div class="col-lg-7 d-none d-lg-block pt-2 long-menu">
-        <ul class="d-flex flex-row ">
-          <li class="p-2"> <a href="">   Home</a> </li>
-          <li class="p-2"><a href=""> Shop</a> </li>
-          <li class="p-2"><a href=""> Product Categories</a> </li>
-          <li class="p-2"><a href=""> Contact</a> </li>
-          <li class="p-2"><a href=""> About</a> </li>
-        </ul>
-      </div>
-      <div class="col-lg-2 d-none d-lg-block pt-2 long-phone ">
-        <a href="#"><i class="fas fa-phone p-2 icon"></i>+23481234568999</a></div>
-    </div>
-  </div>
-</div>
-</header>
-
-<!--Cart sidebar-->
-<div id="cart-sidebar">
-  <h2>Cart Items</h2>
-  <ul id="cartItems"></ul>
-</div>
-<!--Menu overlay and sidebar-->
-<div id="overlay"></div>
-<div id="sidebar">
-  <div class="sidebar-menu-inner sidebar_scrollbar">
-    <div class="sidebar-menu-head">
-        <div class="site-logo">
-            <a href="index.html"><img src="./Assets/clothccessories_logo.png" 
-              style="max-height: 150px;" alt="Logo"></a>
-        </div>
-        
-    </div>
-  <button id="close-btn">&times;</button>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="shop.html">Shop</a></li>
-      <li><a href="#">Product-Category</a></li>
-      <li><a href="track-order.html">Track-Order</a></li>
-      <li><a href="Make-payment.html">Payment</a></li>
-      <li><a href="contact-us.html"> Contact</a></li>
-    </ul>
-  </nav>
-  <div class="social-media-2 mt-4">
-    <ul class="navbar-nav d-flex flex-row social justify-content-md-end">
-      <li> <a href=""> <i class="fa-brands fa-facebook-f icon p-2"></i></a></li>
-<li><a href="#"><i class="fa-brands fa-instagram icon p-2"></i></a></li>
-<li><a href="#"><i class="fa-brands fa-twitter icon p-2"></i></a></li>
-<li><a href="#"><i class="fa-brands fa-whatsapp icon p-2"></i></a></li>
-</ul> 
-  </div>
-</div>
-</div>
-<main>
-  <section class="breadcrumbs-area ">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-color-white">
-          <div class="breadcrumb-inner">
-            <h1 class="text-color-white pt-4">Oder Tracker</h1>
-            <div class="d-flex flex-row breadcrumbs-list">
-              <div class="p-2 home-list"><a href="index.html">
-                 <span><i class="fas fa-house-chimney icon"></i></span> Home 
-                <i class="fas fa-chevron-right p-2"></i>
-              </a></div>
-              <div class="p-2">Track Order</div>
+              <span class="">
+                <form class="input-group">
+                  <input autocomplete="off" type="search"
+                    class="form-control border border-success p-2 border-opacity-25"
+                    placeholder="Search for Products here" style="min-width: 125px;" />
+                  <span class="border-0 d-none d-lg-flex"><i class="fas fa-search search-bar"></i></span>
+                </form>
+              </span>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="section-bg-2 pt-4 pb-4 text-center order-tracker">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 mt-5">
-          <div class="section-title-area text-center mb-5">
-      <h1 class="section-title">Track Order</h1>
-      <p>To track your order please enter your Order ID and Email Address
-         in the boxes below then press the "Track" button. This was 
-        given to you on your receipt and in the confirmation email you 
-        should have received.</p>
-      </div>
-    </div>
-  </div>
-  <div class="row justify-content-center">
-    <div class="col-md-6 mt-5">
-      <form action="" class="contact-form-box">
-        <input type="text" class="" 
-        placeholder="Order ID" aria-label="Search" aria-describedby="search-addon" />
-        <input type="email" class="" 
-        placeholder="Email Address you used on Checkout" 
-        aria-label="Search" aria-describedby="search-addon" />
-        <div class="btn-wrapper">
-        <button class="btn track-order"><a href="">TRACK</a></button>
-      </div>
-      </form>
-  
+      <div class="category-header mt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="dropdown drop-down-title">
+
+                <button class="btn  dropdown-toggle btn-lg w-100
+          section-bg-1 secondary-bg text-color-white text-start" type="button" id="dropdownMenuButton"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  categories
+                </button>
+                <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item border-bottom" href="#">HandBags</a>
+                  <a class="dropdown-item border-bottom" href="#">Shoes</a>
+                  <a class="dropdown-item border-bottom" href="#">Party Purse</a>
+                  <a class="dropdown-item border-bottom" href="#">Jewelry</a>
+                  <a class="dropdown-item border-bottom" href="#"> Luxury Accessories</a>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-7 d-none d-lg-block pt-2 long-menu">
+              <ul class="d-flex flex-row ">
+                <li class="p-2"> <a href=""> Home</a> </li>
+                <li class="p-2"><a href=""> Shop</a> </li>
+                <li class="p-2"><a href=""> Product Categories</a> </li>
+                <li class="p-2"><a href=""> Contact</a> </li>
+                <li class="p-2"><a href=""> About</a> </li>
+              </ul>
+            </div>
+            <div class="col-lg-2 d-none d-lg-block pt-2 long-phone ">
+              <a href="#"><i class="fas fa-phone p-2 icon"></i>+23481234568999</a></div>
+          </div>
         </div>
       </div>
-  </div>
-  </section>
+    </header>
 
-
-</main>
-
-<!--Footer-->
-
-<footer class="mt-5">
-  <div class="container-fluid">
-  <section class="pt-4">
-    <div class="mx-auto mt-5">
-      <div class="my-company text-center mb-4">
-        <!-- Content -->
-        <h6 class="text-uppercase fw-bold mb-4">
-          <i class="fas fa-gem me-3"></i>Clothccesories
-        </h6>
-        <p class="text-center">
-          Here you can use rows and columns to organize your footer content. Lorem ipsum
-          dolor sit amet, consectetur adipisicing elit.
-        </p>
-
-      </div>
-      <div class="row mx-auto mt-5 quick-links">
-        
-        <div class="col-md-3  mb-4 ">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Quick Links
-          </h6>
-          <ul class="my-links ">
-          <li><a href="">Home</a></li>
-          <li><a href="">Payment</a></li>
-          <li><a href="">About Us</a></li>
-          <li><a href="">Contact Us</a></li>
-        </ul>
-      </div>
-      <div class="col-md-3  mb-4">
-        <!-- Links -->
-        <h6 class="text-uppercase fw-bold mb-4">
-          Product & Shop
-        </h6>
-        <ul class="my-links">
-        <li><a href="">Shop</a></li>
-        <li><a href="">Cart</a></li>
-        <li><a href="">My Account</a></li>
-        <li><a href="">Track Order</a></li>
-      </ul>
+    <!--Cart sidebar-->
+    <div id="cart-sidebar">
+      <h2>Cart Items</h2>
+      <ul id="cartItems"></ul>
     </div>
-    <div class="col-md-3  mb-4">
-      <!-- Links -->
-      <h6 class="text-uppercase fw-bold mb-4">
-        Quick Links
-      </h6>
-      <ul class="my-links text-start">
-      <li><a href="">Return Policy</a></li>
-      <li><a href="">Privacy Policy</a></li>
-      <li><a href="">Terms & Conditions</a></li>
-      <li><a href="">Disclaimer</a></li>
-    </ul>
-  </div>
-  <div class="col-md-3  mb-4">
-    <!-- Links -->
-    <h6 class="text-uppercase fw-bold mb-4">Connect with us</h6>
-    <ul class="d-flex flex-row">
-      <li> <a href=""> <i class="fa-brands fa-facebook-f icon p-2"></i></a></li>
-      <li><a href="#"><i class="fa-brands fa-instagram icon p-2"></i></a></li>
-      <li><a href="#"><i class="fa-brands fa-twitter icon p-2"></i></a></li>
-      <li><a href="#"><i class="fa-brands fa-whatsapp icon p-2"></i></a></li> 
-    </ul>
-    <h6 class="text-uppercase fw-bold mb-4">Secured Payment With </h6>
-         <img src="./Assets/paystack-badge-cards.jpg" alt="" style="width: 200px;">
+    <!--Menu overlay and sidebar-->
+    <div id="overlay"></div>
+    <div id="sidebar">
+      <div class="sidebar-menu-inner sidebar_scrollbar">
+        <div class="sidebar-menu-head">
+          <div class="site-logo">
+            <a href="index.html"><img src="./Assets/clothccessories_logo.png" style="max-height: 150px;" alt="Logo"></a>
+          </div>
+
         </div>
-        
+        <button id="close-btn">&times;</button>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="#">Product-Category</a></li>
+            <li><a href="track-order.html">Track-Order</a></li>
+            <li><a href="Make-payment.html">Payment</a></li>
+            <li><a href="contact-us.html"> Contact</a></li>
+          </ul>
+        </nav>
+        <div class="social-media-2 mt-4">
+          <ul class="navbar-nav d-flex flex-row social justify-content-md-end">
+            <li> <a href=""> <i class="fa-brands fa-facebook-f icon p-2"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram icon p-2"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter icon p-2"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-whatsapp icon p-2"></i></a></li>
+          </ul>
+        </div>
       </div>
-     
     </div>
-  </section>
-  <!-- Section: Links  -->
-  
-  <!-- Copyright -->
-  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-    © 2023 Copyright:
-    <a class="text-reset fw-bold" href="#">Clothccesories.com</a>
+    <main>
+      <section class="breadcrumbs-area ">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-color-white">
+              <div class="breadcrumb-inner">
+                <h1 class="text-color-white pt-4">Oder Tracker</h1>
+                <div class="d-flex flex-row breadcrumbs-list">
+                  <div class="p-2 home-list"><a href="index.html">
+                      <span><i class="fas fa-house-chimney icon"></i></span> Home
+                      <i class="fas fa-chevron-right p-2"></i>
+                    </a></div>
+                  <div class="p-2">Track Order</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-bg-2 pt-4 pb-4 text-center order-tracker">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 mt-5">
+              <div class="section-title-area text-center mb-5">
+                <h1 class="section-title">Track Order</h1>
+                <p>To track your order please enter your Order ID and Email Address
+                  in the boxes below then press the "Track" button. This was
+                  given to you on your receipt and in the confirmation email you
+                  should have received.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-6 mt-5">
+              <form action="" class="contact-form-box">
+                <input type="text" class="" placeholder="Order ID" aria-label="Search"
+                  aria-describedby="search-addon" />
+                <input type="email" class="" placeholder="Email Address you used on Checkout" aria-label="Search"
+                  aria-describedby="search-addon" />
+                <div class="btn-wrapper">
+                  <button class="btn track-order"><a href="">TRACK</a></button>
+                </div>
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+
+    <!--Footer-->
+
+    <footer class="mt-5">
+      <div class="container-fluid">
+        <section class="pt-4">
+          <div class="mx-auto mt-5">
+            <div class="my-company text-center mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>Clothccesories
+              </h6>
+              <p class="text-center">
+                Here you can use rows and columns to organize your footer content. Lorem ipsum
+                dolor sit amet, consectetur adipisicing elit.
+              </p>
+
+            </div>
+            <div class="row mx-auto mt-5 quick-links">
+
+              <div class="col-md-3  mb-4 ">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Quick Links
+                </h6>
+                <ul class="my-links ">
+                  <li><a href="">Home</a></li>
+                  <li><a href="">Payment</a></li>
+                  <li><a href="">About Us</a></li>
+                  <li><a href="">Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3  mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Product & Shop
+                </h6>
+                <ul class="my-links">
+                  <li><a href="">Shop</a></li>
+                  <li><a href="">Cart</a></li>
+                  <li><a href="">My Account</a></li>
+                  <li><a href="">Track Order</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3  mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Quick Links
+                </h6>
+                <ul class="my-links text-start">
+                  <li><a href="">Return Policy</a></li>
+                  <li><a href="">Privacy Policy</a></li>
+                  <li><a href="">Terms & Conditions</a></li>
+                  <li><a href="">Disclaimer</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3  mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Connect with us</h6>
+                <ul class="d-flex flex-row">
+                  <li> <a href=""> <i class="fa-brands fa-facebook-f icon p-2"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-instagram icon p-2"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-twitter icon p-2"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-whatsapp icon p-2"></i></a></li>
+                </ul>
+                <h6 class="text-uppercase fw-bold mb-4">Secured Payment With </h6>
+                <img src="./Assets/paystack-badge-cards.jpg" alt="" style="width: 200px;">
+              </div>
+
+            </div>
+
+          </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2023 Copyright:
+          <a class="text-reset fw-bold" href="#">Clothccesories.com</a>
+        </div>
+        <!-- Copyright -->
+
+        <!-- Footer -->
+      </div>
+    </footer>
+
+
+
   </div>
-  <!-- Copyright -->
-  
-  <!-- Footer -->
-  </div>
-  </footer>
-  
 
 
-    </div>
-
-    <script>
-     document.getElementById("toggle-btn").addEventListener("click", function() {
-  var sidebar = document.getElementById("sidebar");
-  var overlay = document.getElementById("overlay");
-
-  if (sidebar.style.left === "-250px") {
-    sidebar.style.left = "0";
-    overlay.style.display = "block";
-  } else {
-    sidebar.style.left = "-250px";
-    overlay.style.display = "none";
-  }
-});
-
-document.getElementById("close-btn").addEventListener("click", function() {
-  var sidebar = document.getElementById("sidebar");
-  var overlay = document.getElementById("overlay");
-
-  sidebar.style.left = "-250px";
-  overlay.style.display = "none";
-});
-
-
-    </script>
-    <script>
-   //  Get the cart icon element
-var cartIcon = document.getElementById('cartIcon');
-// Get the cart items container
-var cartItemsContainer = document.getElementById('cartItems');
-// Get the checkout section
-var checkoutSection = document.getElementById('checkout');
-
-
-// // Initialize the cart count and cart items array
-var cartCount = 0;
-var cartItems =[];
-
-
-cartIcon.addEventListener('click', showCheckout);
-
-// // Attach a click event listener to each "Add to Cart" button
- var addToCartButtons = document.getElementsByClassName('add-to-cart')
- for (var i = 0; i < addToCartButtons.length; i++) {
-  addToCartButtons[i].addEventListener('click', addToCart);
-}
-
-
-// // Function to add the product to the cart and update the cart icon
- function addToCart() {
-  const productContainer = this.parentElement;
-  const productTitle = productContainer.querySelector('.productTitle');
-  const productPrice = productContainer.querySelector('productPrice')
-
-  
-  // Create a new cart item object
-  const cartItem = {
-    title: productTitle,
-    price: productPrice
-  };
- // Add the cart item to the cart items array
- cartItems.push(cartItem);
-
-  // Increase the cart count
-  cartCount++;
-
-//   // Update the cart icon with the new count
-  cartIcon.innerText = cartCount;
- }
-
-
-// Function to show the checkout page with the selected products
-function showCheckout() {
-  // Clear the previous cart items
-  cartItemsContainer.innerHTML = '';
-
-  // Iterate over the cart items and create the list elements
-  cartItems.forEach(function(item) {
-    const li = document.createElement('li');
-    li.innerText = item.title;
-    li.innerText = item.price;
-    cartItemsContainer.appendChild(li);
-  });
-
-  // Show the checkout section
-  
-  checkout.style.display = 'block';
-
-  // Return false to prevent default behavior and page refresh
-  return false;
-}
-
-
-  </script>
-
-  <script src="script.js"></script>
  
+    <!--Mobile Menu Sidebar-->
+    <script>
+      document.getElementById("toggle-btn").addEventListener("click", function() {
+   var sidebar = document.getElementById("sidebar");
+   var overlay = document.getElementById("overlay");
+ 
+   if (sidebar.style.left === "-250px") {
+     sidebar.style.left = "0";
+     overlay.style.display = "block";
+   } else {
+     sidebar.style.left = "-250px";
+     overlay.style.display = "none";
+   }
+ });
+ 
+ document.getElementById("close-btn").addEventListener("click", function() {
+   var sidebar = document.getElementById("sidebar");
+   var overlay = document.getElementById("overlay");
+ 
+   sidebar.style.left = "-250px";
+   overlay.style.display = "none";
+ });
+ 
+</script>
+    
+ 
+   <script src="./scripts/ProductsData.js"></script>
 
   <!--Boostrap CDN-->
-  
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
 </body>
+
 </html>

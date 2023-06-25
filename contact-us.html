@@ -331,100 +331,34 @@ integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG
 
     </div>
 
+   
+    <!--Mobile Menu Sidebar-->
     <script>
-     document.getElementById("toggle-btn").addEventListener("click", function() {
-  var sidebar = document.getElementById("sidebar");
-  var overlay = document.getElementById("overlay");
-
-  if (sidebar.style.left === "-250px") {
-    sidebar.style.left = "0";
-    overlay.style.display = "block";
-  } else {
-    sidebar.style.left = "-250px";
-    overlay.style.display = "none";
-  }
-});
-
-document.getElementById("close-btn").addEventListener("click", function() {
-  var sidebar = document.getElementById("sidebar");
-  var overlay = document.getElementById("overlay");
-
-  sidebar.style.left = "-250px";
-  overlay.style.display = "none";
-});
-
-
-    </script>
-    <script>
-   //  Get the cart icon element
-var cartIcon = document.getElementById('cartIcon');
-// Get the cart items container
-var cartItemsContainer = document.getElementById('cartItems');
-// Get the checkout section
-var checkoutSection = document.getElementById('checkout');
-
-
-// // Initialize the cart count and cart items array
-var cartCount = 0;
-var cartItems =[];
-
-
-cartIcon.addEventListener('click', showCheckout);
-
-// // Attach a click event listener to each "Add to Cart" button
- var addToCartButtons = document.getElementsByClassName('add-to-cart')
- for (var i = 0; i < addToCartButtons.length; i++) {
-  addToCartButtons[i].addEventListener('click', addToCart);
-}
-
-
-// // Function to add the product to the cart and update the cart icon
- function addToCart() {
-  const productContainer = this.parentElement;
-  const productTitle = productContainer.querySelector('.productTitle');
-  const productPrice = productContainer.querySelector('productPrice')
-
-  
-  // Create a new cart item object
-  const cartItem = {
-    title: productTitle,
-    price: productPrice
-  };
- // Add the cart item to the cart items array
- cartItems.push(cartItem);
-
-  // Increase the cart count
-  cartCount++;
-
-//   // Update the cart icon with the new count
-  cartIcon.innerText = cartCount;
- }
-
-
-// Function to show the checkout page with the selected products
-function showCheckout() {
-  // Clear the previous cart items
-  cartItemsContainer.innerHTML = '';
-
-  // Iterate over the cart items and create the list elements
-  cartItems.forEach(function(item) {
-    const li = document.createElement('li');
-    li.innerText = item.title;
-    li.innerText = item.price;
-    cartItemsContainer.appendChild(li);
-  });
-
-  // Show the checkout section
-  
-  checkout.style.display = 'block';
-
-  // Return false to prevent default behavior and page refresh
-  return false;
-}
-
-
-  </script>
-  <script src="script.js"></script>
+      document.getElementById("toggle-btn").addEventListener("click", function() {
+   var sidebar = document.getElementById("sidebar");
+   var overlay = document.getElementById("overlay");
+ 
+   if (sidebar.style.left === "-250px") {
+     sidebar.style.left = "0";
+     overlay.style.display = "block";
+   } else {
+     sidebar.style.left = "-250px";
+     overlay.style.display = "none";
+   }
+ });
+ 
+ document.getElementById("close-btn").addEventListener("click", function() {
+   var sidebar = document.getElementById("sidebar");
+   var overlay = document.getElementById("overlay");
+ 
+   sidebar.style.left = "-250px";
+   overlay.style.display = "none";
+ });
+ 
+</script>
+    
+ 
+   <script src="./scripts/ProductsData.js"></script>
  
 
   <!--Boostrap CDN-->
