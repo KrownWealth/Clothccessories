@@ -1,9 +1,9 @@
 
-let generateShop = () => {
+let generateShoe = () => {
   // Get the product container element
-  const productContainer = document.getElementById('productContainer');
+  const productContainer = document.getElementById('shoesProductContainer');
  // Filter products with defined colors
- const productsWithColors = ProductsData.filter((product) => product.colors !== undefined);
+ const productsWithColors = ShoesData.filter((product) => product.colors !== undefined);
 
   // Generate the shop HTML content
   productContainer.innerHTML = productsWithColors
@@ -42,6 +42,6 @@ function changeProductImage(element, imageSrc) {
   productImage.src = imageSrc;
 }
 
-generateShop();
+generateShoe();
 
 

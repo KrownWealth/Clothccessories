@@ -2,26 +2,10 @@
 let ProductsData = [
   {
     id: "0",
-    name: "Big-Bag",
+    name: "My-Bag",
     price: 8000,
     btn: "Add to cart",
     colors: undefined, // <-- Initialize the `colors` array to an empty array.
-    // colors: [
-    //   {
-    //     code: "black",
-    //     img: "./Assets/bigbag.jpg",
-        
-    //   },
-    //   {
-    //     code: "darkblue",
-    //     img: "./Assets/bigbag2.jpg",
-    //   },
-    //   {
-    //     code: "brown",
-    //     img: "./Assets/bigbag3.jpg",
-    //   },
-    // ],
-
   },
   {
     id: "1",
@@ -31,17 +15,16 @@ let ProductsData = [
     //img: "./Assets/channel.jpg",
     colors: [
       {
-        code: "black",
-        img: "./Assets/channel.jpg",
-        
+        code: "white",
+        img: "./Assets/channelwhite.jpg",
       },
       {
-        code: "darkblue",
-        img: "./Assets/channel2.jpg",
+        code: "blue",
+        img: "./Assets/channelred.jpg",
       },
       {
         code: "brown",
-        img: "./Assets/channel3.jpg",
+        img: "./Assets/channelred.jpg",
       },
     ],
 
@@ -55,17 +38,18 @@ let ProductsData = [
     colors: [
       {
         code: "black",
-        img: "./Assets/bagwithstrap.jpg",
+        img: "./Assets/bagwithstrapblack.jpg",
         
       },
       {
-        code: "darkblue",
-        img: "./Assets/bagwithstrap2.jpg",
+        code: "green",
+        img: "./Assets/bagwithstrapgreen.jpg",
       },
       {
         code: "brown",
-        img: "./Assets/bagwithstrap3.jpg",
+        img: "./Assets/bagwithstrappink.jpg",
       },
+      
     ],
 
   },
@@ -77,17 +61,17 @@ let ProductsData = [
    // img: "./Assets/fendi.jpg",
     colors: [
       {
-        code: "black",
-        img: "./Assets/fendi.jpg",
+        code: "green",
+        img: "./Assets/fendigreen.jpg",
         
       },
       {
-        code: "darkblue",
-        img: "./Assets/fendi2.jpg",
+        code: "yellow",
+        img: "./Assets/fendiorange.jpg",
       },
       {
         code: "brown",
-        img: "./Assets/fendi3.jpg",
+        img: "./Assets/fendibrown.jpg",
       },
     ],
 
@@ -97,21 +81,22 @@ let ProductsData = [
     name: "Croc-Hermes",
     price: 6500,
     img: "./Assets/hermescroc.jpg",
-    // colors: [
-    //   {
-    //     code: "black",
-    //     img: "./Assets/hermescroc.jpg",
+    colors: [
+      {
+        code: "black",
+        img: "./Assets/hermescrocblack.jpg",
         
-    //   },
-    //   {
-    //     code: "darkblue",
-    //     img: "./Assets/hermescroc2.jpg",
-    //   },
-    //   {
-    //     code: "darkblue",
-    //     img: "./Assets/hermescroc3.jpg",
-    //   },
-    // ],
+      },
+      {
+        code: "blue",
+        img: "./Assets/hermescrocblue.jpg",
+      },
+      {
+        code: "brown",
+        img: "./Assets/hermescrocnude.jpg",
+      },
+      
+    ],
 
   },
   {
@@ -123,16 +108,16 @@ let ProductsData = [
     colors: [
       {
         code: "black",
-        img: "./Assets/nuosha.jpg",
+        img: "./Assets/nuoshablack.jpg",
         
       },
       {
-        code: "darkblue",
-        img: "./Assets/nuosha2.jpg",
+        code: "blue",
+        img: "./Assets/nuoshablue.jpg",
       },
       {
         code: "brown",
-        img: "./Assets/nuosha3.jpg",
+        img: "./Assets/nuoshared.jpg",
       },
     ],
 
@@ -146,17 +131,17 @@ let ProductsData = [
         
     colors: [
       {
-        code: "black",
-        img: "./Assets/predo.jpg",
+        code: "green",
+        img: "./Assets/predogreen.jpg",
         
       },
       {
-        code: "darkblue",
-        img: "./Assets/predo2.jpg",
+        code: "white",
+        img: "./Assets/predosilver.jpg",
       },
       {
-        code: "brown",
-        img: "./Assets/predo3.jpg",
+        code: "yellow",
+        img: "./Assets/predoyellowgold.jpg",
       },
     ],
 
@@ -170,7 +155,7 @@ let ProductsData = [
     colors: [
       {
         code: "black",
-        img: "./Assets/multicolor.jpg",
+        img: "./Assets/multicolorblack.jpg",
         
       },
       {
@@ -193,12 +178,12 @@ let ProductsData = [
     colors: [
       {
         code: "black",
-        img: "./Assets/sussex.jpg",
+        img: "./Assets/sussexblack.jpg",
         
       },
       {
-        code: "darkblue",
-        img: "./Assets/sussex2.jpg",
+        code: "brown",
+        img: "./Assets/sussexnude.jpg",
       },
     ],
 
@@ -212,12 +197,12 @@ let ProductsData = [
     colors: [
       {
         code: "black",
-        img: "./Assets/travelhermes.jpg",
+        img: "./Assets/travelhermesblack.jpg",
         
       },
       {
-        code: "darkblue",
-        img: "./Assets/travelhermes2.jpg",
+        code: "green",
+        img: "./Assets/travelhermesgreen.jpg",
         
       },
     ],
@@ -232,7 +217,7 @@ let ProductsData = [
     colors: [
       {
         code: "black",
-        img: "./Assets/zara.jpg",
+        img: "./Assets/zarablack.jpg",
         
       },
       {
@@ -243,8 +228,404 @@ let ProductsData = [
     ],
 
   },
+  {
+    id: "11",
+    name: "Channel",
+    price: 6500,
+    btn: "Add to cart",
+    // img: "./Assets/zara.jpg",
+    colors: [
+      {
+        code: "black",
+        img: "./Assets/shoulderchannelblack.jpg",
+        
+      },
+      {
+        code: "darkblue",
+        img: "./Assets/zara2.jpg",
+        
+      },
+    ],
+
+  },
+  {
+    id: "12",
+    name: "Channel",
+    price: 6500,
+    btn: "Add to cart",
+    // img: "./Assets/zara.jpg",
+    colors: [
+      {
+        code: "black",
+        img: "./Assets/shoulderchannelblack.jpg",
+        
+      },
+      {
+        code: "white",
+        img: "./Assets/shoulderchannelwhite.jpg",
+        
+      },
+      {
+        code: "green",
+        img: "./Assets/shoulderchannelgreen.jpg",
+        
+      },
+    ],
+
+  },
+  {
+    id: "13",
+    name: "Big-Bag",
+    price: 8000,
+    btn: "Add to cart",
+    colors: [
+      {
+        code: "black",
+        img: "./Assets/bigbagblack.jpg",
+        
+      },
+      {
+        code: "blue",
+        img: "./Assets/bigbagbrown.jpg",
+      },
+      {
+        code: "brown",
+        img: "./Assets/bigbagnude.jpg",
+      },
+    ],
+
+  },
+  {
+    id: "14",
+    name: "BJ-Bag",
+    price: 8000,
+    btn: "Add to cart",
+    colors: [
+      {
+        code: "black",
+        img: "./Assets/bjbrown.jpg",
+        
+      },
+      {
+        code: "blue",
+        img: "./Assets/bjbrown2.jpg",
+      },
+      {
+        code: "brown",
+        img: "./Assets/bjnude.jpg",
+      },
+    ],
+
+  },
+  {
+    id: "15",
+    name: "Malinda",
+    price: 8000,
+    btn: "Add to cart",
+    colors: [
+      {
+        code: "white",
+        img: "./Assets/malindawhite.jpg",
+        
+      },
+      {
+        code: "green",
+        img: "./Assets/malindagreen.jpg",
+      },
+      {
+        code: "brown",
+        img: "./Assets/malindanude.jpg",
+      },
+    ],
+
+  },
+  {
+    id: "16",
+    name: "Big-Bag",
+    price: 8000,
+    btn: "Add to cart",
+    colors: [
+      {
+        code: "black",
+        img: "./Assets/bigbagblack.jpg",
+        
+      },
+      {
+        code: "blue",
+        img: "./Assets/bigbagbrown.jpg",
+      },
+      {
+        code: "brown",
+        img: "./Assets/bigbagnude.jpg",
+      },
+    ],
+
+  },
 ];
 
+let ShoesData = [
+  {
+    id: "0",
+    name: "My-Bag",
+    price: 8000,
+    btn: "Add to cart",
+    colors: undefined, // <-- Initialize the `colors` array to an empty array.
+  },
+  {
+    id: "1",
+    name: "Heal-1",
+    price: 10000,
+    btn: "Add to cart",
+    //img: "./Assets/channel.jpg",
+    colors: [
+      {
+        code: "black",
+        img: "./Assets/shoesData/beautifulhealblack.jpg",
+      },
+      {
+        code: "blue",
+        img: "./Assets/shoesData/beautifulhealblue.jpg",
+      },
+    ],
 
+  },
+  {
+    id: "2",
+    name: "Heal-2",
+    price: 10000,
+    btn: "Add to cart",
+    //img: "./Assets/channel.jpg",
+    colors: [
+      {
+        code: "black",
+        img: "./Assets/shoesData/block-heal-black.jpg",
+      },
+      {
+        code: "white",
+        img: "./Assets/shoesData/block-heal-white.jpg",
+      },
+      {
+        code: "brown",
+        img: "./Assets/shoesData/block-heal-nude.jpg",
+      }
+    ],
+
+  },
+  {
+    id: "3",
+    name: "Heal-3",
+    price: 10000,
+    btn: "Add to cart",
+    //img: "./Assets/channel.jpg",
+    colors: [
+      {
+        code: "black",
+        img: "./Assets/shoesData/blockhealblack.jpg",
+      },
+      {
+        code: "white",
+        img: "./Assets/shoesData/blockhealwhite.jpg",
+      },
+      {
+        code: "brown",
+        img: "./Assets/shoesData/blockhealnude.jpg",
+      }
+    ],
+
+  },
+  {
+    id: "4",
+    name: "Heal-4",
+    price: 10000,
+    btn: "Add to cart",
+    //img: "./Assets/channel.jpg",
+    colors: [
+      {
+        code: "black",
+        img: "./Assets/shoesData/blockofficehealblack.jpg",
+      },
+      {
+        code: "brown",
+        img: "./Assets/shoesData/blockofficehealnude.jpg",
+      }
+    ],
+
+  },
+  {
+    id: "5",
+    name: "Dior",
+    price: 10000,
+    btn: "Add to cart",
+    //img: "./Assets/channel.jpg",
+    colors: [
+      {
+        code: "black",
+        img: "./Assets/shoesData/diorblack.jpg",
+      },
+      {
+        code: "white",
+        img: "./Assets/shoesData/dior-white.jpg",
+      },
+    ],
+
+  },
+  {
+    id: "6",
+    name: "Embroided-Heal",
+    price: 10000,
+    btn: "Add to cart",
+    //img: "./Assets/channel.jpg",
+    colors: [
+  
+      {
+        code: "white",
+        img: "./Assets/shoesData/embroidedhealwhite.jpg",
+      },
+    ],
+
+  },
+
+  {
+    id: "7",
+    name: "Heal-5",
+    price: 10000,
+    btn: "Add to cart",
+    //img: "./Assets/channel.jpg",
+    colors: [
+      {
+        code: "black",
+        img: "./Assets/shoesData/heal-2-black.jpg",
+      },
+      {
+        code: "white",
+        img: "./Assets/shoesData/heal-1-white.jpg",
+      },
+      {
+        code: "brown",
+        img: "./Assets/shoesData/heal-4-white.jpg",
+      },
+      {
+        code: "yellow",
+        img: "./Assets/shoesData/heal-3-white.jpg",
+      },
+    ],
+
+  },
+  {
+    id: "8",
+    name: "Slippers",
+    price: 10000,
+    btn: "Add to cart",
+    //img: "./Assets/channel.jpg",
+    colors: [
+      {
+        code: "black",
+        img: "./Assets/shoesData/slippers-1-black.jpg",
+      },
+      {
+        code: "white",
+        img: "./Assets/shoesData/slippers-5-white.jpg",
+      },
+      {
+        code: "blue",
+        img: "./Assets/shoesData/slippers-4-blue.jpg",
+      },
+      {
+        code: "brown",
+        img: "./Assets/shoesData/slippers-2-gold.jpg",
+      },
+    ],
+
+  },
+  {
+    id: "9",
+    name: "Slide",
+    price: 10000,
+    btn: "Add to cart",
+    //img: "./Assets/channel.jpg",
+    colors: [
+      {
+        code: "black",
+        img: "./Assets/shoesData/slideblack.jpg",
+      },
+      {
+        code: "green",
+        img: "./Assets/shoesData/slidegreen.jpg",
+      },
+      {
+        code: "white",
+        img: "./Assets/shoesData/slidewhite.jpg",
+      },
+      {
+        code: "brown",
+        img: "./Assets/shoesData/slidepink.jpg",
+      },
+    ],
+
+  },
+  {
+    id: "10",
+    name: "Heal-6",
+    price: 10000,
+    btn: "Add to cart",
+    //img: "./Assets/channel.jpg",
+    colors: [
+      {
+        code: "black",
+        img: "./Assets/shoesData/lowblockhealblack.jpg",
+      },
+      {
+        code: "white",
+        img: "./Assets/shoesData/lowblockhealwhite.jpg",
+      },
+      {
+        code: "green",
+        img: "./Assets/shoesData/lowblockhealgreen.jpg",
+      },
+    ],
+
+  },
+  {
+    id: "11",
+    name: "Sneaker",
+    price: 10000,
+    btn: "Add to cart",
+    //img: "./Assets/channel.jpg",
+    colors: [
+      {
+        code: "black",
+        img: "./Assets/shoesData/sneakerblack.jpg",
+      },
+      {
+        code: "white",
+        img: "./Assets/shoesData/sneakerwhite.jpg",
+      },
+      {
+        code: "brown",
+        img: "./Assets/shoesData/sneakerbrown.jpg",
+      },
+    ],
+
+  },
+  {
+    id: "12",
+    name: "Wedge",
+    price: 10000,
+    btn: "Add to cart",
+    //img: "./Assets/channel.jpg",
+    colors: [
+      {
+        code: "black",
+        img: "./Assets/shoesData/wedgeblack.jpg",
+      },
+      {
+        code: "blue",
+        img: "./Assets/shoesData/wedgeblue.jpg",
+      },
+    ],
+
+  },
+  
+]
 
 

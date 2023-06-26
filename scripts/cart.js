@@ -55,13 +55,13 @@ function addToCart() {
   return (
   ` <div class="d-flex flex-row cart-item">
       <div class="p-2 mx-2 cart-img">
-      <img class="productImg" src="${img}" alt="Product Image">
+      <img class="productImg" src="${img}" alt="Product Image" style="height: 30%; object-fit: cover;">
       </div>
       <div class="p-2 mx-2">
-        <h5 class="productTitle">${name}</h5>
+        <h5 class="productTitle" style="font-size: 12px">${name}</h5>
       </div>
       <div class="p-2 mx-2">
-        <p class="productPrice">${price}</p>
+        <p class="productPrice" style="font-size: 12px">${price}</p>
       </div>
     </div>`
      )

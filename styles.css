@@ -577,23 +577,39 @@ color: #fff;
 
   
 }
+
 .color{
-  width: 25px;
-  height: 25px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
-  background-color: #000;
+  border: 1px solid gray;
   margin-right: 10px;
   cursor: pointer;
 }
 
+.color-1{
+  background-color: #000;
+}
 
-.color:not(:first-child):not(:last-child){
-  background-color: brown;
+.color-2{
+  background-color: #fff;
 }
 
 
-.color:last-child{
-  background-color: darkblue;
+.color-3{
+  background-color: blue;
+}
+
+.color-4{
+  background-color: green;
+}
+
+.color-5{
+  background-color: brown;
+}
+
+.color-6{
+  background-color: yellow;
 }
 
 
