@@ -1,5 +1,10 @@
 # About Clothccessories
-## This is an e-commerce website 
+## Shopping made easy with Clothccessories, an e-commerce website for shopping all luxury products.
+
+![myclothccessories](https://github.com/KrownWealth/Clothccessories/assets/100444940/fe984bb3-c686-47d8-8bc8-2d028181cae4)(https://krownwealth.github.io/Clothccessories/#)
+
+
+
 
 # Tech Stacks used :
 ## HTML
